@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <!-- login Page -->
+    <div class="container bg-blue-500 h-screen">
+      <div class="flex flex-col w-full justify-center items-center m-w-screen px-4 py-4" id="loginPage">
+        <h1 class="text-5xl font-bold text-white mb-4 mt-20">Welcome To STL</h1>
+        <h1 class="text-white mt-3 font-semibold">Username :</h1>
+        <input type="text" placeholder="Masukan username" id="usernameInput" class="rounded-sm p-1" />
+        <h1 class="text-white mt-3 font-semibold">Password :</h1>
+        <input type="password" placeholder="Masukkan Password" id="passwordInput" class="rounded-sm p-1" />
+        <button id="loginButton" onClick="login()" class="font-semibold rounded-xl px-2 py-1 shadow-lg bg-white hover:bg-gray-200 mt-3">LOGIN</button>
+      </div>
+
+      <!-- login Page END-->
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
+
+<!-- <html>
+  <head>SESI-5-CUYUNIVERSITY</head>
+  <style>
+    #root {
+      background-color: tomato;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      height: 100vh;
+    }
+  </style>
+  <body>
+    <!-- INI KONTEN KITA -->
+<!-- <div id="root">
+      <input type="text" placeholder="username" id="usernameInput" />
+      <input type="password" placeholder="password" id="passwordInput" />
+      <button onclick="onLogin()" id="loginButton">LOGIN</button>
+      <button onclick="onLogout()" id="logoutButton">LOGOUT</button>
+      <br/>
+        <h1 id="admin">LOGIN SEBAGAI ADMIN</h1>
+        <h1 id="basic">LOGIN SEBAGAI USER BIASA</h1>
+      </div>
+
+      <script type="application/javascript">
+
+      let usernameInput = document.getElementById('usernameInput');
+      let passwordInput = document.getElementById('passwordInput');
+      let loginButton = document.getElementById('loginButton');
+      let logoutButton = document.getElementById('logoutButton');
+      let admin = document.getElementById('admin');
+      let basic = document.getElementById('basic');
+
+      admin.style.display = "none";
+      basic.style.display = "none";
+      logoutButton.style.display = "none";
+
+      function onLogin() {
+        localStorage.setItem("username", usernameInput.value);
+        logoutButton.style.display = "block";
+        if(usernameInput.value == "admin" && passwordInput.value == "admin123") {
+          localStorage.setItem("role", "admin");
+          usernameInput.style.display = "none"
+          passwordInput.style.display = "none"
+          loginButton.style.display = "none"
+          basic.style.display = "none";
+          admin.style.display = "block";
+        }else {
+          usernameInput.style.display = "none"
+          passwordInput.style.display = "none"
+          loginButton.style.display = "none"
+          localStorage.setItem("role", "basic");
+          admin.style.display = "none";
+          basic.style.display = "block";
+        }
+      }
+
+      if(localStorage.getItem('username')){
+        usernameInput.style.display = "none"
+        passwordInput.style.display = "none"
+        loginButton.style.display = "none"
+        logoutButton.style.display = "block";
+        if(localStorage.getItem('role') == "admin"){
+          basic.style.display = "none";
+          admin.style.display = "block";
+        }else{
+          admin.style.display = "none";
+          basic.style.display = "block";
+        }
+      }
+
+      function onLogout() {
+        localStorage.clear();
+        location.reload();
+      }
+    </script>
+    </body>
+  </html> -->
+-->
